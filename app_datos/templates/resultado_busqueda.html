@@ -1,0 +1,13 @@
+{% if ciudadano %}
+    <ul>
+    {% for ciudadano in ciudadano %}
+        <li>Nombre: {{ciudadano.nombre}}</li>
+        <li>Edad: {{ciudadano.edad}}</li>
+        <li>Ciudad: {{ciudadano.ciudad}}</li>
+    {%endfor%}
+    </ul>
+    {% else %}
+        <p>No se encontro el ciudadano</p>
+    {% endif %}
+
+
